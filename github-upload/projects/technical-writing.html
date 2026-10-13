@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Technical Writing — Anton Rehan Edirisinghe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="v2.css" />
+</head>
+<body>
+<div class="wrap" id="top">
+<div class="top"><a class="name" href="../index.html">Anton Rehan Edirisinghe</a><a href="../index.html#work">← All work</a></div>
+<h1>Technical Writing</h1>
+<p class="kicker">Writing · Reports, memos, documentation</p>
+<div class="body"><ul>
+<li>My writing has been shaped by MECHENG 395, my research, and two internships at ESi, where I drafted engineering reports.</li>
+<li>That work trained me to write for both technical and non-technical readers: clear findings up front, with the supporting analysis behind them.</li>
+<li>Sample below: a MECHENG 395 lab report written as a consulting memo to a client, evaluating a solar-powered vaccine storage unit.</li>
+</ul></div>
+<div class="viewer">
+<div class="vbar"><span>Page <span id="pg">1</span> / 8</span><a href="writing/lab5-report.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div>
+<div class="vpages" id="vpages">
+<img src="writing/p01.jpg" alt="Page 1" loading="lazy" width="1224" height="1584" />
+<img src="writing/p02.jpg" alt="Page 2" loading="lazy" width="1224" height="1584" />
+<img src="writing/p03.jpg" alt="Page 3" loading="lazy" width="1224" height="1584" />
+<img src="writing/p04.jpg" alt="Page 4" loading="lazy" width="1224" height="1584" />
+<img src="writing/p05.jpg" alt="Page 5" loading="lazy" width="1224" height="1584" />
+<img src="writing/p06.jpg" alt="Page 6" loading="lazy" width="1224" height="1584" />
+<img src="writing/p07.jpg" alt="Page 7" loading="lazy" width="1224" height="1584" />
+<img src="writing/p08.jpg" alt="Page 8" loading="lazy" width="1224" height="1584" />
+</div>
+</div>
+<footer><a href="../index.html#work">← Back to work</a><a href="#top">Back to top ↑</a></footer>
+</div>
+<script>
+(()=>{const box=document.getElementById('vpages'),pg=document.getElementById('pg'),imgs=[...box.querySelectorAll('img')];box.addEventListener('scroll',()=>{const mid=box.scrollTop+box.clientHeight/3;let n=1;imgs.forEach((im,i)=>{if(im.offsetTop-box.offsetTop<=mid)n=i+1});pg.textContent=n},{passive:true})})();
+</script>
+</body>
+</html>
